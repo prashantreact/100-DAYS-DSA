@@ -20,9 +20,7 @@ Example 2:
 Input: n = 2
 Output: false
  
-
 Constraints:
-
 1 <= n <= 231 - 1
 */
 /*--- Solution--- */
