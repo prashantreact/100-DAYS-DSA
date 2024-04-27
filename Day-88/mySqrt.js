@@ -1,4 +1,4 @@
-// Day-80
+// Day-88
 /*Question:-
 write a JavaScript function to capitalize the first letter of a string. Provide an example demonstrating the usage of this function with a given string "dsa questions",
 */
