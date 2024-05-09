@@ -32,26 +32,17 @@ Therefore, we return "ponter".
 
 /*--- Solution--- */
 
-function faultyKeyboard(s) {
+const faultyKeyboard = (s) => {
   let result = "";
-  let prevI = false;
-
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] === "i") {
-      prevI = !prevI;
-      continue;
-    }
-
-    if (prevI) {
-      result = s[i] + result;
+  for (let char of s) {
+    if (char === "i") {
+      result = result.split("").reverse().join("");
     } else {
-      result += s[i];
+      result += char;
     }
   }
-
   return result;
-}
+};
 
-// Example:-
-console.log(faultyKeyboard("string")); // Output: "rtsng"
-console.log(faultyKeyboard("poiinter")); // Output: "ponter"
+Example: -console.log(faultyKeyboard("string")); // "rtsng"
+console.log(faultyKeyboard("poiinter")); // "ponter"
